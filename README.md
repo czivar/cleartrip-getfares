@@ -1,17 +1,20 @@
 cleartrip-getfares
 ==================
 
-This is a simple script to get flight fares using the ClearTrip API. More info: http://www.cleartrip.com/api/
+This is a simple script to get flight fares using the ClearTrip API. More info about the API: http://www.cleartrip.com/api/
 
 Usage
 ==================
 
-Modify script parameters in the script
-Run it
+0. Get API key here: http://api.staging.cleartrip.com/register
+
+1. Modify parameters in the script (API key, and the details of the flight)
+2. Run it
 
 Example
 ==================
 
+```
 glasgow% ./getfares.py
 | Departure           | Arrival             | Route (Airline)       | Fare       |
 | 2013-12-12T08:55:00 | 2013-12-12T21:40:00 | GLA-(BA)-LCY-(BA)-BUD | 117.12 GBP |
@@ -46,3 +49,4 @@ glasgow% ./getfares.py
 | 2013-12-12T09:30:00 | 2013-12-12T21:40:00 | EDI-(BA)-LHR-(BA)-BUD | 129.17 GBP |
 Show more (y/n): n
 glasgow% 
+```
